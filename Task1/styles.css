@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Imperial+Script&family=Mea+Culpa&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tangerine:wght@400;700&display=swap');
+@font-face {
+  font-family: "Mak";
+  src: url(MAK.ttf);
+}
+
+.loading-text {
+  position: fixed;
+  inset: 0;
+  background: #000;
+  color: white;
+  font-family: "Mak";
+  font-size: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.content {
+  display: none;
+  text-align: center;
+  padding: 2rem;
+}
+
+
+.hehe {
+  font-size: 1.2vw;
+  font-family: "Poppins";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 90%;
+  font-weight: 400;
+  transform: translate(-50%, -50%);
+  color: black;
+  text-align: center;
+  z-index: 100;
+}
+
+.spann{
+	font-family:'Mak'; 
+	font-weight: 500; 
+	font-size: 5vw;
+
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  background-color: rgba(243, 241, 241, 0.452);
+  overflow: hidden;
+  color: white;
+}
+
+.container-items {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.item {
+  position: relative;
+  flex-grow: 1;
+  font-family: "Mak";
+  font-size: 120px;
+  opacity: 0;
+  transition: all 300ms ease-in-out;
+}
+
+.item:hover {
+  flex-grow: 2;
+  font-size: 200px;
+}
+
+h3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+}
+
+img {
+  width: 100%;
+}
+
+.container-img-wrap {
+  position: absolute;
+  top: -50rem; /* Changed from -60rem to -50rem */
+  left: -80px;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.container-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+@media (max-width: 900px) {
+  .container-items {
+    height: 100px;
+  }
+  .hehe{
+
+    font-size: 4vw;
+  }
+  .spann{
+
+    font-size: 7vw;
+    line-height: 5vh;
+  }
+  .item {
+    font-size: 20px;
+    position: relative;
+    top: -25vh;
+  }
+  .loading-text{
+
+    font-size: 6vw;
+    display: none;
+  }
+  .item:hover {
+    flex-grow: 1;
+    font-size: 20px;
+  }
+  .container-img-wrap {
+    display: grid;
+   
+  }
+  .navbar {
+    display: none !important;
+  }
+}
+
+.site-info{
+
+ background-color: transparent;
+  color: black;
+  cursor: pointer;
+  font-family: "Mak";
+  font-size: 1.6vw;
+  border: none;
+  letter-spacing: 2px;
+}
+
+.site-logo {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Mak";
+  font-size: 24px;
+  color: black;
+  line-height: 100px;
+  text-transform: uppercase;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  line-height: 100px;
+}
+
+.site-menu {
+  display: flex;
+}
+
+.menu-item {
+  margin-left: 60px;
+  font-family: "Mak";
+  color: black;
+}
+
+.header {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  top: 20%;
+  padding: 40px;
+  text-transform: uppercase;
+  font-family: "Mak";
+  font-size: 40px;
+  z-index: 2;
+}
+
+.header-left span {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.link {
+  margin: 40px 0;
+}
+
+.link a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #000;
+}
