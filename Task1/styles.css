@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Imperial+Script&family=Mea+Culpa&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tangerine:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Imperial+Script&family=Mea+Culpa&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tangerine:wght@400;700&display=swap");
 @font-face {
   font-family: "Mak";
   src: url(MAK.ttf);
@@ -22,7 +22,6 @@
   padding: 2rem;
 }
 
-
 .hehe {
   font-size: 1.2vw;
   font-family: "Poppins";
@@ -37,11 +36,10 @@
   z-index: 100;
 }
 
-.spann{
-	font-family:'Mak'; 
-	font-weight: 500; 
-	font-size: 5vw;
-
+.spann {
+  font-family: "Mak";
+  font-weight: 500;
+  font-size: 5vw;
 }
 * {
   margin: 0;
@@ -118,12 +116,10 @@ img {
   .container-items {
     height: 100px;
   }
-  .hehe{
-
+  .hehe {
     font-size: 4vw;
   }
-  .spann{
-
+  .spann {
     font-size: 7vw;
     line-height: 5vh;
   }
@@ -132,8 +128,7 @@ img {
     position: relative;
     top: -25vh;
   }
-  .loading-text{
-
+  .loading-text {
     font-size: 6vw;
     display: none;
   }
@@ -143,16 +138,14 @@ img {
   }
   .container-img-wrap {
     display: grid;
-   
   }
   .navbar {
     display: none !important;
   }
 }
 
-.site-info{
-
- background-color: transparent;
+.site-info {
+  background-color: transparent;
   color: black;
   cursor: pointer;
   font-family: "Mak";
